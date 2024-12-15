@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+  <div class="container">
+      <div class="main-content"></div>
+
+    <div class="image-container">
+      <div class="profile-item">
+        <div class="profile-image fade-in">
+          <img src="{{ url_for('static', filename='image.png') }}" alt="Image 1">
+        </div>
+        <div class="profile-text">
+          <strong>John Devis Cuyos</strong><br>
+          Cycling, Sleeping<br>
+          <div class="goals-social">
+            Aspiring Cybersecurity Analyst | <a href="https://www.facebook.com/share/1BH7Tig5RN/?mibextid=LQQJ4d"><i class="fab fa-facebook-square"></i></a>| <a href="https://www.instagram.com/jdcuyos/"><i class="fab fa-instagram"></i></a>| <a href="https://github.com/johndeviscuyos"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-image fade-in">
+          <img src="{{ url_for('static', filename='image2.png') }}" alt="Image 2">
+        </div>
+        <div class="profile-text">
+          <strong>Shervin Mangulabnan</strong><br>
+          Painting, Coding<br>
+          <div class="goals-social">
+            To become a software engineer | <a href="https://www.facebook.com/profile.php?id=100083027151648&mibextid=ZbWKwL"><i class="fab fa-facebook-square"></i></a>| <a href="https://www.instagram.com/shervin.macro/"><i class="fab fa-instagram"></i></a>| <a href=" https://github.com/shervss"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-image fade-in">
+          <img src="{{ url_for('static', filename='image3.png') }}" alt="Image 3">
+        </div>
+        <div class="profile-text">
+          <strong>Shan Marc Diong</strong><br>
+          Music, Reading<br>
+          <div class="goals-social">
+            To publish a novel | <a href=" https://www.facebook.com/smdiong?mibextid=ZbWKwL"><i class="fab fa-facebook-square"></i></a>| <a href="https://www.instagram.com/neil.aspag/"><i class="fab fa-instagram"></i></a>| <a href="https://github.com/SMDiong"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-image fade-in">
+          <img src="{{ url_for('static', filename='image4.png') }}" alt="Image 4">
+        </div>
+        <div class="profile-text">
+          <strong>Ralph Cyrel Ronda</strong><br>
+          Sports, Gaming<br>
+          <div class="goals-social">
+            To become a pro gamer | <a href="https://www.facebook.com/ralphcyrel.banzuelo.9"><i class="fab fa-facebook-square"></i></a>| <a href="https://www.instagram.com/rlphcyrl/"><i class="fab fa-instagram"></i></a>| <a href="https://github.com/ralphcyrel"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-image fade-in">
+          <img src="{{ url_for('static', filename='image5.png') }}" alt="Image 5">
+        </div>
+        <div class="profile-text">
+          <strong>Thea Uy</strong><br>
+          Traveling, Cooking<br>
+          <div class="goals-social">
+            To travel the world | <a href="https://www.facebook.com/thea.pulgarinasuy?mibextid=ZbWKwL"><i class="fab fa-facebook-square"></i></a>| <a href="thea_instagram_link"><i class="fab fa-instagram"></i></a>| <a href="https://github.com/iya-8986"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-image fade-in">
+          <img src="{{ url_for('static', filename='image6.png') }}" alt="Image 6">
+        </div>
+        <div class="profile-text">
+          <strong>April Varron</strong><br>
+          Writing, Gardening<br>
+          <div class="goals-social">
+            To have a successful blog | <a href="https://www.facebook.com/abrrrrt?mibextid=ZbWKwL"><i class="fab fa-facebook-square"></i></a>| <a href="https://www.instagram.com/dab4abril/"><i class="fab fa-instagram"></i></a>| <a href="https://github.com/eyyyprilll"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-item">
+        <div class="profile-image fade-in">
+          <img src="{{ url_for('static', filename='image7.png') }}" alt="Image 7">
+        </div>
+        <div class="profile-text">
+          <strong>Nash Erich Garcia</strong><br>
+          Dancing, Movies<br>
+          <div class="goals-social">
+            To become a choreographer | <a href="https://www.facebook.com/share/15y1TsMsZJ/https://www.facebook.com/share/15y1TsMsZJ/"><i class="fab fa-facebook-square"></i></a>| <a href="https://www.instagram.com/_nsheri/"><i class="fab fa-instagram"></i></a>| <a href="https://github.com/erichgwapito"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <nav>
+    <a href="{{ url_for('home') }}">
+      <i class="fas fa-home"></i>
+      Home
+    </a>
+    <a href="{{ url_for('profile') }}">
+      <i class="fas fa-user"></i>
+      Profile
+    </a>
+    <a href="{{ url_for('projects') }}">
+      <i class="fas fa-project-diagram"></i>
+      Projects
+    </a>
+  </nav>
+
+  <script src="js/profile.js"></script>
+
+</body>
+</html>

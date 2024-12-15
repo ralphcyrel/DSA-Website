@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="alternate" href="css/works.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Team Nash Aguas Projects</h1>
+
+    <div class="stack-container">
+      <h2>Current Stack:</h2>
+      <p>{{ stack_contents }}</p>
+
+      <form method="POST">
+        <div>
+          <label for="data">Data:</label>
+          <input type="text" name="data" id="data">
+        </div>
+        <div>
+          <button type="submit" name="push">Push</button>
+          <button type="submit" name="pop">Pop</button>
+          <button type="submit" name="peek">Peek</button>
+          <button type="submit" name="remove_beginning">Remove from Beginning</button>
+          <button type="submit" name="remove_at_end">Remove from End</button>
+          <button type="submit" name="remove_at">Remove At</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <nav>
+    <a href="{{ url_for('home') }}">
+      <i class="fas fa-home"></i>
+      Home
+    </a>
+    <a href="{{ url_for('profile') }}">
+      <i class="fas fa-user"></i>
+      Profile
+    </a>
+    <a href="{{ url_for('projects') }}">
+      <i class="fas fa-project-diagram"></i>
+      Projects
+    </a>
+  </nav>
+
+</body>
+  <script src="java/project.js"></script>
+</html>
